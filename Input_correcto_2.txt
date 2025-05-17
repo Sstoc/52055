@@ -1,0 +1,4 @@
+while(0) {
+    printf("Esto no se ejecuta");
+    break;
+}
