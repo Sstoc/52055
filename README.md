@@ -20,10 +20,10 @@ Asegúrate de tener instaladas las siguientes herramientas:
 
 Instala ANTLR y las dependencias necesarias.
 
-Genera el parser a partir del archivo `MiniC.g4`:
+Estar en la dirección correcta, para eso se debe ejecutar en la terminal:
 
 ```bash
-antlr4 -Dlanguage=JavaScript -o generated MiniC.g4
+cd "52055\el verdadero antlr4"
 ```
 
 Ejecuta el analizador con Node.js usando `main.js`:
