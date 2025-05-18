@@ -49,3 +49,15 @@ Para ver el arbol de derivación se deberá ejecutar `f5` en visual studio code 
 este nos mostrará el arbol completo de derivación. Al ejecutar `node main.js` 
 podremos ver la lista de tokens y se traducirá a javascript automaticamente, 
 para su ejecución en javascript se deberá escribir en la terminal `node output.js`
+Ejemplo con el Input_correcto_1.txt:
+Vamos a copiar su contenido y pegarlo en el archivo Input.txt 
+while(1) {
+    printf("Perro");
+    break;
+}
+(si no tenemos activado ANTLR4 view vamos a entrar en el archivo MiniC.g4 y nos aparecerá en la columno de la izquierda)
+Luego precionaremos f5 para ver el arbol de derivación.
+Para ver la tabla de Tokens vamos a abrir la terminal en visual studio code y escribiremos `node main.js` al oprimir enter 
+nos mostrará los tokens y nos genera el codigo en java script(en este ejemplo no tendremos problemas, por lo que no saldran 
+erres en lineas), el cual se puede ejecutar escibiendo en esta misma terminal o en una nueva `node output.js` mostrando la palabra
+Perro.
