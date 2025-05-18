@@ -1,4 +1,4 @@
-// Generated from c:/Users/aandr/OneDrive/Documentos/el verdadero antlr4/MiniC.g4 by ANTLR 4.13.1
+// Generated from c:/Users/aandr/Downloads/antlr/antlr-c-proyecto/el verdadero antlr4/MiniC.g4 by ANTLR 4.13.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import MiniCListener from './MiniCListener.js';
