@@ -1,6 +1,6 @@
 # MiniC - Proyecto de Analizador Sintáctico
 
-Este proyecto contiene la gramática y el código para un analizador sintáctico básico para un mini lenguaje C (MiniC) usando ANTLR4.
+Este proyecto contiene la gramática y el código para un analizador sintáctico básico de un mini lenguaje C (MiniC) usando ANTLR4.
 
 ## Instalación
 
@@ -12,52 +12,70 @@ git clone https://github.com/Sstoc/52055.git
 
 Asegúrate de tener instaladas las siguientes herramientas:
 
-- Node.js y npm
-- ANTLR 4
-- Java (requerido por ANTLR para generar el parser)
-
+- **Node.js y npm**
+- **ANTLR 4**
+- **Java** (requerido por ANTLR para generar el parser)
 
 ## Uso
 
-1. Instala ANTLR y las dependencias necesarias.
+Instala ANTLR y las dependencias necesarias.
 
-2. Genera el parser a partir del archivo `MiniC.g4`:
+Genera el parser a partir del archivo `MiniC.g4`:
 
 ```bash
 antlr4 -Dlanguage=JavaScript -o generated MiniC.g4
 ```
 
-3. Ejecuta el analizador con Node.js usando `main.js`:
+Ejecuta el analizador con Node.js usando `main.js`:
 
 ```bash
 node main.js
 ```
 
-4. Siempre debes usar un archivo `input.txt` para que funcione correctamente.
+Siempre debes usar un archivo `input.txt` para que funcione correctamente.
 
 ## Archivos importantes
 
 - `MiniC.g4` – Gramática ANTLR para el lenguaje MiniC.
 - `main.js` – Código principal para ejecutar el analizador.
 - Carpeta `generated/` – Contiene el código generado automáticamente por ANTLR.
-- Archivo de entrada:
-   - `input.txt`
+- Archivo de entrada: `input.txt`.
 
 ## Información adicional
 
-Para ver el arbol de derivación se deberá ejecutar `f5` en visual studio code y
-este nos mostrará el arbol completo de derivación. Al ejecutar `node main.js` 
-podremos ver la lista de tokens y se traducirá a javascript automaticamente, 
-para su ejecución en javascript se deberá escribir en la terminal `node output.js`
-Ejemplo con el Input_correcto_1.txt:
-Vamos a copiar su contenido y pegarlo en el archivo Input.txt 
+Para ver el árbol de derivación, presiona `F5` en **Visual Studio Code**; esto mostrará el árbol completo de derivación.
+
+Al ejecutar `node main.js`, podrás ver la lista de tokens y se traducirá a JavaScript automáticamente. Para ejecutar el código generado en JavaScript, debes escribir en la terminal:
+
+```bash
+node output.js
+```
+
+### Ejemplo con el archivo `Input_correcto_1.txt`:
+
+Copia su contenido y pégalo en el archivo `input.txt`:
+
+```c
 while(1) {
     printf("Perro");
     break;
 }
-(si no tenemos activado ANTLR4 view vamos a entrar en el archivo MiniC.g4 y nos aparecerá en la columno de la izquierda)
-Luego precionaremos f5 para ver el arbol de derivación.
-Para ver la tabla de Tokens vamos a abrir la terminal en visual studio code y escribiremos `node main.js` al oprimir enter 
-nos mostrará los tokens y nos genera el codigo en java script(en este ejemplo no tendremos problemas, por lo que no saldran 
-erres en lineas), el cual se puede ejecutar escibiendo en esta misma terminal o en una nueva `node output.js` mostrando la palabra
-Perro.
+```
+
+Si no tienes activada la vista ANTLR4 en **Visual Studio Code**, abre el archivo `MiniC.g4` y te aparecerá una columna a la izquierda.
+
+Luego, presiona `F5` para ver el árbol de derivación.
+
+Para ver la tabla de tokens, abre la terminal en **Visual Studio Code** y escribe:
+
+```bash
+node main.js
+```
+
+Al presionar `Enter`, se mostrarán los tokens y se generará el código en **JavaScript**. En este ejemplo, no aparecerán errores en las líneas. Finalmente, para ejecutar el código generado, escribe en la terminal:
+
+```bash
+node output.js
+```
+
+Esto mostrará la palabra **Perro**.
