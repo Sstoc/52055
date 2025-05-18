@@ -48,4 +48,4 @@ node main.js
 Para ver el arbol de derivación se deberá ejecutar `f5` en visual studio code y
 este nos mostrará el arbol completo de derivación. Al ejecutar `node main.js` 
 podremos ver la lista de tokens y se traducirá a javascript automaticamente, 
-para su ejecución en java script se deberá escribir en la terminal `node output.js`
+para su ejecución en javascript se deberá escribir en la terminal `node output.js`
