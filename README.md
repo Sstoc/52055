@@ -4,12 +4,24 @@ Este proyecto contiene la gramática y el código para un analizador sintáctico
 
 ## Instalación
 
-Para clonar este repositorio, ejecuta:
+Para clonar este repositorio, ejecuta en la terminal:
 
 ```bash
 git clone https://github.com/Sstoc/52055.git
 ```
+Luego: 
 
+```bash
+cd 52055
+```
+```bash
+cd "el verdadero antlr4"
+```
+Y para terminar y abrirlo: 
+
+```bash
+code .
+```
 Asegúrate de tener instaladas las siguientes herramientas:
 
 - **Node.js y npm**
@@ -19,12 +31,6 @@ Asegúrate de tener instaladas las siguientes herramientas:
 ## Uso
 
 Instala ANTLR y las dependencias necesarias.
-
-Estar en la dirección correcta, para eso se debe ejecutar en la terminal:
-
-```bash
-cd "52055\el verdadero antlr4"
-```
 
 Ejecuta el analizador con Node.js usando `main.js`:
 
