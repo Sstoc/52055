@@ -31,7 +31,10 @@ Ejecuta el analizador con Node.js usando `main.js`:
 ```bash
 node main.js
 ```
-
+En caso de que no lo permita, se debe ejecutar en la terminal:
+```bash
+npm install antlr4
+```
 Siempre debes usar un archivo `input.txt` para que funcione correctamente.
 
 ## Archivos importantes
